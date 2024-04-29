@@ -2,18 +2,18 @@
 
 :warning: Everything between << >> needs to be replaced (remove << >> after replacing)
 
-# << Project Title >>
-## CS110 Final Project  << Semester, Year >>
+# Ramen
+## CS110 Final Project  Spring, 2024 
 
 ## Team Members
 
-<< List team member names >>
+Tasnimul Fahim, Andy Huang
 
 ***
 
 ## Project Description
 
-<< Give an overview of your project >>
+Defend against arrows
 
 ***    
 
@@ -42,9 +42,49 @@
 - << You should have a list of each of your classes with a description >>
 
 ## ATP
+Test 1: Games opens up 
+| Step                 |Procedure             |Expected Results                   |
+|----------------------|:--------------------:|----------------------------------:|
+|  1                   | Start game           |                                    |
+|  2                   |                     |                                 |
 
+
+Test 1: Verify shield moves in the direction of the arrow keys 
+| Step                 |Procedure             |Expected Results                   |
+|----------------------|:--------------------:|----------------------------------:|
+|  1                   | Start game           |                                    |
+|  2                   | Press Left arrow key |                                 |
+|  6                   |Verify shield moves Left|                                  |
+|  3                   | Press Up arrow key   |                                 |
+|  6                   |Verify shield moves Up|                                  |
+|  4                   | Press Right arrow key|                                 |
+|  6                   |Verify shield moves Right|                               |
+|  5                   | Press Down arrow key |                                   |
+|  6                   |Verify shield moves Down|                              |
+
+Test 2: Collision; Arrow hits sheild, kills the spite 
 | Step                 |Procedure             |Expected Results                   |
 |----------------------|:--------------------:|----------------------------------:|
 |  1                   | Run Counter Program  |GUI window appears with count = 0  |
 |  2                   | click count button   | display changes to count = 1      |
-etc...
+
+Test 3: Collision; Arrow hits hero
+| Step                 |Procedure             |Expected Results                   |
+|----------------------|:--------------------:|----------------------------------:|
+|  1                   | Run Counter Program  |GUI window appears with count = 0  |
+|  2                   | click count button   | display changes to count = 1      |
+
+Test 4: Game over screen pops up
+| Step                 |Procedure             |Expected Results                   |
+|----------------------|:--------------------:|----------------------------------:|
+|  1                   | Run Counter Program  |GUI window appears with count = 0  |
+|  2                   | click count button   | display changes to count = 1      |
+
+Test 5: Next Level
+| Step                 |Procedure             |Expected Results                   |
+|----------------------|:--------------------:|----------------------------------:|
+|  1                   | Run Counter Program  |GUI window appears with count = 0  |
+|  2                   | click count button   | display changes to count = 1      |
+
+
+
