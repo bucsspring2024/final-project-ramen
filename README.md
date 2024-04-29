@@ -13,7 +13,7 @@ Tasnimul Fahim, Andy Huang
 
 ## Project Description
 
-Defend against arrows
+You are an airbender who is getting attacked by arrows. However, you have your glider to defend you from these arrows. The question is how long can you last?
 
 ***    
 
