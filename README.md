@@ -31,11 +31,11 @@ Defend against arrows
 
 ### Features
 
-1. << Feature 1 >>
-2. << Feature 2 >>
-3. << Feature 3 >>
-4. << Feature 4 >>
-5. << Feature 5 >>
+1. Level Counter
+2. Moveable Sprite
+3. Collisions
+4. Music
+5. Game Over Screen
 
 ### Classes
 
@@ -45,46 +45,55 @@ Defend against arrows
 Test 1: Games opens up 
 | Step                 |Procedure             |Expected Results                   |
 |----------------------|:--------------------:|----------------------------------:|
-|  1                   | Start game           |                                    |
-|  2                   |                     |                                 |
+|  1                   | Click Run            |                                   |
+|  2                   | Game Starts          |                                   |
 
 
-Test 1: Verify shield moves in the direction of the arrow keys 
+Test 2: Verify shield moves in the direction of the arrow keys 
 | Step                 |Procedure             |Expected Results                   |
 |----------------------|:--------------------:|----------------------------------:|
-|  1                   | Start game           |                                    |
-|  2                   | Press Left arrow key |                                 |
-|  6                   |Verify shield moves Left|                                  |
-|  3                   | Press Up arrow key   |                                 |
-|  6                   |Verify shield moves Up|                                  |
-|  4                   | Press Right arrow key|                                 |
-|  6                   |Verify shield moves Right|                               |
-|  5                   | Press Down arrow key |                                   |
-|  6                   |Verify shield moves Down|                              |
+|  1                   | Start game           |                                   |
+|  2                   | Press Left arrow key |                                   |
+|  3                   |Verify shield moves Left|                                 |
+|  4                   | Press Up arrow key   |                                   |
+|  5                   |Verify shield moves Up|                                   |
+|  6                   | Press Right arrow key|                                   |
+|  7                   |Verify shield moves Right|                                |
+|  8                   | Press Down arrow key |                                   |
+|  9                   |Verify shield moves Down|                                 |
 
-Test 2: Collision; Arrow hits sheild, kills the spite 
+Test 3: Collision; Arrow hits shield 
 | Step                 |Procedure             |Expected Results                   |
 |----------------------|:--------------------:|----------------------------------:|
-|  1                   | Run Counter Program  |GUI window appears with count = 0  |
-|  2                   | click count button   | display changes to count = 1      |
+|  1                   |Game starts           |                                   |
+|  2                   |Arrow moves towards hero|                                 |
+|  3                   |Verify arrow collides with shield|                        |
 
-Test 3: Collision; Arrow hits hero
+Test 4: Collision; Arrow hits hero
 | Step                 |Procedure             |Expected Results                   |
 |----------------------|:--------------------:|----------------------------------:|
-|  1                   | Run Counter Program  |GUI window appears with count = 0  |
-|  2                   | click count button   | display changes to count = 1      |
+|  1                   |Game starts           |                                   |
+|  2                   |Arrow moves towards hero|                                 |
+|  3                   |Verify arrow collides with player|                        |
 
-Test 4: Game over screen pops up
+Test 5: Next Level Counter
 | Step                 |Procedure             |Expected Results                   |
 |----------------------|:--------------------:|----------------------------------:|
-|  1                   | Run Counter Program  |GUI window appears with count = 0  |
-|  2                   | click count button   | display changes to count = 1      |
+|  1                   | Level icon pops up on screen |                           |
+|  2                   |After # of arrows, increase level counter by 1|           |
 
-Test 5: Next Level
+Test 6: Music runs
 | Step                 |Procedure             |Expected Results                   |
 |----------------------|:--------------------:|----------------------------------:|
-|  1                   | Run Counter Program  |GUI window appears with count = 0  |
-|  2                   | click count button   | display changes to count = 1      |
+|  1                   | Game Starts          |                                   |
+|  2                   | Music Plays          |                                   |
 
+Test 7: Music Ends
+| Step                 |Procedure             |Expected Results                   |
+|----------------------|:--------------------:|----------------------------------:|
+|  1                   | Game Starts          |                                   |
+|  2                   | Music Plays          |                                   |
+|  3                   | Game Over Screen     |                                   |
+|  4                   | Music Stops          |                                   |
 
 
