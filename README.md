@@ -78,7 +78,7 @@ Test 4: Collision; Arrow hits hero
 
 Test 5: Next Level Counter
 | Step  |Procedure                                         |Expected Results      |
-|-------|:--------------------:----------------------------|----------------------|
+|-------|:------------------------------------------------:|----------------------|
 |  1    | Level icon pops up on screen                     | Level number will    |
 |  2    |After waves of arrows, increase level counter by 1| visibly change. More |
 |  3    |Verify amount of arrows increase                  | arrows will appear.  |
@@ -90,7 +90,7 @@ Test 6: Music runs
 
 Test 7: Level Mastery
 | Step                 |Procedure                  |Expected Results                   |
-|----------------------|:--------------------:-----|----------------------------------:|
+|----------------------|:-------------------------:|----------------------------------:|
 |  1                   | Game Starts               |      "You are A Hero"             |
 |  2                   | Survive Levels 1-4        |       text appears.               |
 |  3                   | Verify Level 4 is finished|                                   |
