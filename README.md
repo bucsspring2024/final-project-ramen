@@ -66,7 +66,7 @@ Test 3: Collision; Arrow hits shield
 | Step                 |Procedure             |Expected Results                  |
 |----------------------|:--------------------:|--------------------------------- |
 |  1         |Game starts                        |    Arrow Sprite should        |                        
-|  2         |Arrow moves towards hero           |  dissapear. "Hero" should     |                            
+|  2         |Arrow moves towards hero           |  dissapear. "Hero" should     |                        
 |  3         |Verify arrow collides with shield  | be alive and game continues   |
                         
 Test 4: Collision; Arrow hits hero
@@ -96,5 +96,3 @@ Test 7: Level Mastery
 |  2                   | Survive Levels 1-4        |       text appears.               |
 |  3                   | Verify Level 4 is finished|                                   |
 |  4                   | Wait for message to appear|                                   |
-
-
