@@ -82,6 +82,7 @@ Test 5: Next Level Counter
 |  1    | Level icon pops up on screen                     | Level number will    |
 |  2    |After waves of arrows, increase level counter by 1| visibly change. More |
 |  3    |Verify amount of arrows increase                  | arrows will appear.  |
+
 Test 6: Music runs
 | Step                 |Procedure             |Expected Results                   |
 |----------------------|:--------------------:|----------------------------------:|
