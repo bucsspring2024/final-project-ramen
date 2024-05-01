@@ -18,9 +18,12 @@ class Controller:
     self.font= pygame.font.Font(None, 48)
     
   def mainloop(self):
-    hero=Hero(500,650,"assets/hero.png")
+    hero=Hero(305,350,"assets/heartshield.gif")
     hero_group=pygame.sprite.Group()
     hero_group.add(hero)
+    airbend=Airbend(355,350,"assets/snakeshield.png")
+    airbend_group=pygame.sprite.Group()
+    airbend_group.add(airbend)
     num_arrow= 32
     arrow_group= pygame.sprite.Group()
     arrow_group=self.add(num_arrow,arrow_group)
@@ -28,12 +31,30 @@ class Controller:
     level=1
     move= 15
     text= self.font.render(f"Level: {level}",True,"red")
-    while True:
+    run=True
+    while run:
       self.display.blit(self.background,(0,0))
       for event in pygame.event.get():
         if event.type == pygame.QUIT:
           pygame.quit()
+          run=False
           break
+        if event.type==pygame.KEYDOWN:
+          if event.key==pygame.K_RIGHT:
+            if airbend.rect.x <= 330:
+              airbend.rect.x += 50
+          if event.key==pygame.K_LEFT:
+            if airbend.rect.x >= 300:
+              airbend.rect.x -= 50
+          if event.key==pygame.K_UP:
+            if airbend.rect.top >= 310:
+              airbend.rect.y -= 50
+          if event.key==pygame.K_DOWN:
+            if airbend.rect.bottom <= 450:
+              airbend.rect.y += 50
+      hero_group.draw(self.display)
+      airbend_group.draw(self.display)
+      self.display.blit(text,(350,600))
       pygame.display.flip()
   def rand(self,one,two):
     ran_x=random.randint(0,one)
