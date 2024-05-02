@@ -6,8 +6,10 @@ class Airbend(pygame.sprite.Sprite):
         self.image=pygame.image.load(img)
         self.image = pygame.transform.scale(self.image, (80,80))
         self.rect=self.image.get_rect()
-        self.rect.x=x
-        self.rect.y=y
+        self.x=x
+        self.y=y
+        self.rect.x=self.x
+        self.rect.y=self.y
     def update(self,x):
         self.rect.x=(x)
     def update(self,y):
