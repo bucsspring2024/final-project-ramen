@@ -16,7 +16,7 @@ Tasnimul Fahim, Andy Huang
 <<<<<<< HEAD
 You are a hero who is getting attacked by arrows. However, you have your trusty staff and your slithering companion to defend you from these arrows. The question is how long can you last?
 =======
-You are an airbender who is getting attacked by arrows. However, you have your glider to defend you from these arrows. The question is how long can you last? Will you come out as a victorious hero?
+
 >>>>>>> a99a223fea2090a672620890ad9c4315da73667a
 
 ***    
@@ -29,7 +29,7 @@ You are an airbender who is getting attacked by arrows. However, you have your g
 
 ### Final Design
 
-![final gui](assets/finalgui.jpg)
+![final gui](assets/backround.jpg)
 
 ## Program Design
 
@@ -44,7 +44,10 @@ You are an airbender who is getting attacked by arrows. However, you have your g
 ### Classes
 
 - << You should have a list of each of your classes with a description >>
-
+airbend.py class is the class that holds the shield
+arrow.py class is the class that holds all the enemy arrows
+hero.py is the class that holds the heart sprite
+music.py holds the music files
 ## ATP
 Test 1: Games opens up 
 | Step                 |Procedure             |Expected Results                   |
@@ -73,30 +76,29 @@ Test 3: Collision; Arrow hits shield
 |  2         |Arrow moves towards hero           |  disappear. "Hero" should     |                        
 |  3         |Verify arrow collides with shield  | be alive and game continues   |
                         
-Test 4: Collision; Arrow hits hero
-| Step     |Procedure                        |Expected Results                |
-|----------|:--------------------:           |--------------------------------|
-|  1       |Game starts                      | Controller movement ends.      |
-|  2       |Arrow moves towards hero         | "Game Over" Text Appears.      |
-|  3       |Verify arrow collides with player|                                |
 
-Test 5: Next Level Counter
+
+Test 4: Next Level Counter
 | Step  |Procedure                                         |Expected Results      |
 |-------|:------------------------------------------------:|----------------------|
 |  1    | Level icon pops up on screen                     | Level number will    |
 |  2    |After waves of arrows, increase level counter by 1| visibly change. More |
 |  3    |Verify amount of arrows increase                  | arrows will appear.  |
 
-Test 6: Music runs
+Test 5: Music runs
 | Step                 |Procedure             |Expected Results                   |
 |----------------------|:--------------------:|----------------------------------:|
 |  1                   | Game Starts          |  Music should be playing,         |
 |  2                   | Music Plays          |  once game starts.                |
 
-Test 7: Level Mastery
+Test 6: Arrow Counter
 | Step                 |Procedure                  |Expected Results                   |
 |----------------------|:-------------------------:|----------------------------------:|
-|  1                   | Game Starts               |      "You are A Hero"             |
-|  2                   | Survive Levels 1-4        |       text appears.               |
-|  3                   | Verify Level 4 is finished|                                   |
-|  4                   | Wait for message to appear|                                   |
+|  1                   | Game Starts               |      "Arrow Counter Changes"      |
+|  2                   | Block Arrow      |        |
+|  3                   | Verify change in Arrow    |                                   |
+|  4                   | Counter                   |                                   |
+
+
+Glitches: 1.Arrow count increases after blocking inital arrows with any event
+          2.Arrow spawns runs into issues, does not go pass level 2

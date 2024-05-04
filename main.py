@@ -1,14 +1,14 @@
 import pygame
 from src.music import Music
-from src.sample_controller import Controller
+from src.controller import Controller
 
 def main():
     pygame.init()
     controller=Controller()
-    # music = Music()
+    music = Music()
     #Create an instance on your controller object
     #Call your mainloop
-    # music.startmusic()
+    music.startmusic()
     controller.mainloop()
     
     ###### NOTHING ELSE SHOULD GO IN main(), JUST THE ABOVE 3 LINES OF CODE ######
