@@ -13,11 +13,7 @@ Tasnimul Fahim, Andy Huang
 
 ## Project Description
 
-<<<<<<< HEAD
-You are a hero who is getting attacked by arrows. However, you have your trusty staff and your slithering companion to defend you from these arrows. The question is how long can you last?
-=======
-
->>>>>>> a99a223fea2090a672620890ad9c4315da73667a
+You are a hero who is getting attacked by arrows. However, you have your slithering companion to defend you from these arrows. The question is how long can you last as the speed of the arrows increase?
 
 ***    
 
@@ -59,47 +55,45 @@ Test 1: Games opens up
 Test 2: Verify shield moves in the direction of the arrow keys 
 | Step                 |Procedure             |Expected Results                   |
 |----------------------|:--------------------:|----------------------------------:|
-|  1                   | Start game           |      Player moves in the          |
-|  2                   | Press Left arrow key |      direction in respect to      |
-|  3                   |Verify shield moves Left|    the directional arrow        |
-|  4                   | Press Up arrow key   |      key pressed.                 |
-|  5                   |Verify shield moves Up|                                   |
-|  6                   | Press Right arrow key|                                   |
-|  7                   |Verify shield moves Right|                                |
-|  8                   | Press Down arrow key |                                   |
-|  9                   |Verify shield moves Down|                                 |
+|  1                   | Start game           |    Program starts                 |
+|  2                   | Press Left arrow key |   snake.rect.x changes by -50     |
+|  3                   |Verify shield moves Left|  Visually, the shield moves left|
+|  4                   | Press Up arrow key   |   snake.rect.y changes by -50     |
+|  5                   |Verify shield moves Up|   Visually, the shield moves up   |
+|  6                   | Press Right arrow key|   snake.rect.x changes by 50      |
+|  7                   |Verify shield moves Right| Visually, the shield moves right|
+|  8                   | Press Down arrow key |   snake.rect.y changes by 50      |
+|  9                   |Verify shield moves Down| Visually, the shield moves down |
 
 Test 3: Collision; Arrow hits shield 
 | Step                 |Procedure             |Expected Results                  |
 |----------------------|:--------------------:|--------------------------------- |
-|  1         |Game starts                        |    Arrow Sprite should        |                        
-|  2         |Arrow moves towards hero           |  disappear. "Hero" should     |                        
-|  3         |Verify arrow collides with shield  | be alive and game continues   |
+|  1         |Game starts                        |program runs             |                        
+|  2         |Arrow moves towards hero           |arrow position is changing to reflect movement|                        
+|  3         |Verify arrow collides with shield  | if arrow collides then arrowcounter -1 and arrow disappears |
                         
 
 
 Test 4: Next Level Counter
 | Step  |Procedure                                         |Expected Results      |
 |-------|:------------------------------------------------:|----------------------|
-|  1    | Level icon pops up on screen                     | Level number will    |
-|  2    |After waves of arrows, increase level counter by 1| visibly change. More |
-|  3    |Verify amount of arrows increase                  | arrows will appear.  |
+|  1    |Level icon pops up on screen                     | Level text appears at bottom of screen    |
+|  2    |Increase level counter by 1|checks number of collisions and reassigns level value based on amount of collisions|
+|  3    |Verify speed of arrows increase                  | speed reflects next level speed  |
 
 Test 5: Music runs
 | Step                 |Procedure             |Expected Results                   |
 |----------------------|:--------------------:|----------------------------------:|
-|  1                   | Game Starts          |  Music should be playing,         |
-|  2                   | Music Plays          |  once game starts.                |
+|  1                   | Game Starts          |                                   |
+|  2                   | Music Plays          |  music.startmusic() runs music.py |
 
-Test 6: Arrow Counter
+Test 6: Arrow Counter (amount of arrows left per stage)
 | Step                 |Procedure                  |Expected Results                   |
 |----------------------|:-------------------------:|----------------------------------:|
-|  1                   | Game Starts               |      "Arrow Counter Changes"      |
-|  2                   | Block Arrow      |        |
-|  3                   | Verify change in Arrow    |                                   |
-|  4                   | Counter                   |                                   |
+|  1                   | Game Starts               |                                   |
+|  2                   | 4 arrows spawns           |  numArrows increments by 4        |
+|  3                   | Shield blocks Arrow       |numArrows decrements by 1, arrow is removed from group  |
+|  4                   | Verify change in Arrow counter    | text display is updated           |
 
-
-Glitches: 1.Arrow count increases after blocking inital arrows with any event
-          2.Arrow spawns runs into issues, does not go pass level 2 (crashes)
-          3. Heart collision not working
+Glitches
+|  Sometimes the arrows don't collide with the heart |
