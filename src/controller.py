@@ -184,7 +184,3 @@ class Controller:
         speed=5
       elif level==4:
         speed=10
-      
-                
-    
-        

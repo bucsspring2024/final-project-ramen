@@ -2,7 +2,7 @@
 
 :warning: Everything between << >> needs to be replaced (remove << >> after replacing)
 
-# Ramen
+# Ramen Hero
 ## CS110 Final Project  Spring, 2024 
 
 ## Team Members
@@ -39,11 +39,12 @@ You are a hero who is getting attacked by arrows. However, you have your slither
 
 ### Classes
 
-- << You should have a list of each of your classes with a description >>
 airbend.py class is the class that holds the shield
 arrow.py class is the class that holds all the enemy arrows
+controller.py allows sprites to move and controls game logic
 hero.py is the class that holds the heart sprite
 music.py holds the music files
+
 ## ATP
 Test 1: Games opens up 
 | Step                 |Procedure             |Expected Results                   |
@@ -70,9 +71,7 @@ Test 3: Collision; Arrow hits shield
 |----------------------|:--------------------:|--------------------------------- |
 |  1         |Game starts                        |program runs             |                        
 |  2         |Arrow moves towards hero           |arrow position is changing to reflect movement|                        
-|  3         |Verify arrow collides with shield  | if arrow collides then arrowcounter -1 and arrow disappears |
-                        
-
+|  3         |Verify arrow collides with shield  | if arrow collides then arrowcounter -1 and arrow disappears |                  
 
 Test 4: Next Level Counter
 | Step  |Procedure                                         |Expected Results      |
