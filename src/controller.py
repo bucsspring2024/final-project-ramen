@@ -142,15 +142,15 @@ class Controller:
           level=1
         else:
           level=int(math.log2(collision))
-          if numArrow%(2*level)== (0):
-            arrowT= Arrow('top',random.randint(330,400),0,"assets/arrowf.png")
-            arrowTop.add(arrowT)
-            arrowB= Arrow('bottom',random.randint(330,400),700,"assets/arrowf.png")
-            arrowBottom.add(arrowB)
-            arrowR= Arrow('right',0,random.randint(370,450),"assets/arrowf.png")
-            arrowRight.add(arrowR)
-            arrowL= Arrow('left',700,random.randint(370,450),"assets/arrowf.png")
-            arrowLeft.add(arrowL)
+        
+          arrowT= Arrow('top',random.randint(330,400),0,"assets/arrowf.png")
+          arrowTop.add(arrowT)
+          arrowB= Arrow('bottom',random.randint(330,400),700,"assets/arrowf.png")
+          arrowBottom.add(arrowB)
+          arrowR= Arrow('right',0,random.randint(370,450),"assets/arrowf.png")
+          arrowRight.add(arrowR)
+          arrowL= Arrow('left',700,random.randint(370,450),"assets/arrowf.png")
+          arrowLeft.add(arrowL)
           numArrow += 4
       
         

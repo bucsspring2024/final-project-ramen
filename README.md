@@ -101,5 +101,5 @@ Test 6: Arrow Counter
 
 
 Glitches: 1.Arrow count increases after blocking inital arrows with any event
-          2.Arrow spawns runs into issues, does not go pass level 2
+          2.Arrow spawns runs into issues, does not go pass level 2 (crashes)
           3. Heart collision not working
