@@ -32,8 +32,7 @@ class Arrow(pygame.sprite.Sprite):
             self.image= pygame.transform.rotate(self.image,180)
             self.rect=self.image.get_rect()
             self.rect.right=xA
-            self.y=yA  
-    
+            self.y=yA 
     
             
     def update(self,dir,w,speed):
