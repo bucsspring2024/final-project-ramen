@@ -39,7 +39,7 @@ You are a hero who is getting attacked by arrows. However, you have your trusty 
 2. Moveable Sprite
 3. Collisions
 4. Music
-5. Game Over Screen
+5. Arrow Counter
 
 ### Classes
 
