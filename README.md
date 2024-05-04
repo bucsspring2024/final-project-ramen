@@ -29,7 +29,7 @@ You are a hero who is getting attacked by arrows. However, you have your trusty 
 
 ### Final Design
 
-![final gui](assets/finalgui.jpg)
+![final gui](assets/finalgui.png)
 
 ## Program Design
 
